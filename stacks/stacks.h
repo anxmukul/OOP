@@ -7,4 +7,5 @@ class Stack
     void pop_an_interger();
     int get_top_element();
     int length_of_stack();
+    void Print_all_element();
 };

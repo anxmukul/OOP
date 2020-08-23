@@ -28,3 +28,11 @@ int Stack::get_top_element(){
 int Stack::length_of_stack(){
     return top;
 }
+void Stack::Print_all_element(){
+    int i=0;
+    cout<<"Stack: ";
+    for(i=0; i <= top; i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<"\n";
+}
