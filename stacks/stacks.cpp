@@ -15,7 +15,7 @@ void Stack::push_an_integer(int x){
     top = top+1;
     a[top] = x;
 }
-void Stack::pop_an_interger(){
+void Stack::pop_an_integer(){
     if(top == -1){
         cout<<"Stack is Empty.";
         return;
