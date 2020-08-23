@@ -5,8 +5,8 @@ int a[10];
 int top = -1;
 void Stack::push_an_integer(int x){
     if(top == 9){
-        cout<<"Error: Stack Overflow";
-        cout<<"exanding memory for storing data\n";
+        cout<<"Error: Stack Overflow:\n";
+        cout<<"Exanding memory for storing data\n";
         a[10] = a[20];
         top = top +1;
         a[top] = x;
