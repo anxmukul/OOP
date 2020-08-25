@@ -1,8 +1,6 @@
 #include "stacks.h"
 #include <bits/stdc++.h>
 using namespace std;
-int a[10];
-int top = -1;
 void Stack::push_an_integer(int x){
     if(top == 9){
         cout<<"Error: Stack Overflow:\n";
@@ -17,7 +15,7 @@ void Stack::push_an_integer(int x){
 }
 void Stack::pop_an_integer(){
     if(top == -1){
-        cout<<"Stack is Empty.";
+        cout<<"Stack is Empty.\n";
         return;
     }
     top = top-1;

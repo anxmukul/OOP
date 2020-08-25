@@ -2,6 +2,8 @@
 class Stack
 {
     private:
+    int a[5];
+    int top = -1;
     public:
     void push_an_integer(int x);
     void pop_an_integer();
