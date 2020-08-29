@@ -1,6 +1,6 @@
 // Customer header file
 #ifndef CUSTOMER_H
-#include "address.cpp"
+#include "address.cpp"      // here we are includeing .cpp not .h file because cpp brings .h file with it but .h file donot do so.
 #include <bits/stdc++.h>
 using namespace std;
 class Customer{
@@ -12,8 +12,7 @@ class Customer{
     int balance;   
     public:
     Customer() {}
-    Customer(int x, string n, int y)
-    {
+    Customer(int x, string n, int y){
         name = n;
         balance = y;
         id = x;
@@ -26,5 +25,6 @@ class Customer{
     void showDetails();
     void showDetailsWithAddress();
     void deposit(int x);
+    void withdraw(int x);
 };
 #endif

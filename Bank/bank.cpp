@@ -36,7 +36,9 @@ void Bank::setAddressForCustomer(){
         cout << "Bad input\n";
     }
 }
-void Bank::depositCash(int customer_id, int amount)
-    {
-        customer_ary[customer_id - 1].deposit(amount);
-    }
+void Bank::depositCash(int customer_id, int amount){
+    customer_ary[customer_id - 1].deposit(amount);
+}
+void Bank::withdrawcash(int customer_id, int amount){
+    customer_ary[customer_id - 1].withdraw(amount);
+}

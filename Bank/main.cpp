@@ -8,13 +8,19 @@ int main(){
     bank.describeAllCustomers();
     while (true)
     {
-        cout << "set address\n";
+        cout << "\nSet address\n";
         bank.setAddressForCustomer();
         bank.describeAllCustomersInDetail();
-        cout<<"deposit cash: enter cutomer id, amount";
+        cout<<"\nDeposit Cash: Enter cutomer id and amount:\n";
         int x, y;
         cin>>x>>y;
         bank.depositCash(x, y);
+        //bank.describeAllCustomersInDetail();
+        cout<<"\nWithdrawl Cash: Enter customer id and amount:\n";
+        int i, a;
+        cin>>i>>a;
+        bank.withdrawcash(i, a);
+        //bank.describeAllCustomersInDetail();
     }
     return 0;
 }

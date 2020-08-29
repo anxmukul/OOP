@@ -14,10 +14,10 @@ class Bank{
         for (int i = 0; i < size; i++){
             string x;
             int y;
-            cout << "Enter detail for cusotmer no" << i + 1 << endl;
-            cout << "enter name \n";
+            cout << "Enter detail for cusotmer no " << i + 1 << endl;
+            cout << "Enter name \n";
             cin >> x;
-            cout << "enter starting balance \n";
+            cout << "Enter starting balance:\n";
             cin >> y;
             Customer c(i + 1, x, y);
             customer_ary.push_back(c);
@@ -27,6 +27,7 @@ class Bank{
     void describeAllCustomersInDetail();
     void setAddressForCustomer();
     void depositCash(int customer_id, int amount);
+    void withdrawcash(int customer_id, int amount);
     
 };
 #endif
