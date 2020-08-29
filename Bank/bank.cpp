@@ -1,5 +1,5 @@
-#include "customer.h"
-#include "address.h"
+//#include "customer.c"
+//#include "address.h"
 #include "bank.h"
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,5 +1,6 @@
 // Customer header file
-#include "address.h"
+#ifndef CUSTOMER_H
+#include "address.cpp"
 #include <bits/stdc++.h>
 using namespace std;
 class Customer{
@@ -26,3 +27,4 @@ class Customer{
     void showDetailsWithAddress();
     void deposit(int x);
 };
+#endif

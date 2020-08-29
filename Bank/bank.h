@@ -1,5 +1,6 @@
-#include "customer.h"
-#include "address.h"
+#ifndef BANK_H
+#include "customer.cpp"
+//#include "address.h"
 #include <bits/stdc++.h>
 using namespace std;
 class Bank{
@@ -28,3 +29,4 @@ class Bank{
     void depositCash(int customer_id, int amount);
     
 };
+#endif

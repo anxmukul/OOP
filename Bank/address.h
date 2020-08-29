@@ -1,4 +1,5 @@
 // header file for address
+#ifndef ADDRESS_H
 #include <bits/stdc++.h>
 using namespace std;
 class Address{
@@ -22,3 +23,4 @@ public:
     }
     string getAddress();
 };
+#endif

@@ -1,6 +1,6 @@
-#include "address.h"
-#include "customer.h"
-#include "bank.h"
+//#include "address.h"
+//#include "customer.h"
+#include "bank.cpp"
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
@@ -16,4 +16,5 @@ int main(){
         cin>>x>>y;
         bank.depositCash(x, y);
     }
+    return 0;
 }
