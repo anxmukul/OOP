@@ -13,4 +13,7 @@ class Structure{
     void pop();
     void top();
     void display();
+    Structure(){
+        head = NULL;
+    }
 };
