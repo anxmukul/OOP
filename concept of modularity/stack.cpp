@@ -3,18 +3,21 @@
 using namespace std;
 class Stack{
     private:
-    int y;
+    //int y;
     Linkedlist l1;
     public:
     void push(int n){
-        y = n;
-        l1.insert_at_front(y);
+        //y = n;
+        l1.insert_at_front(n);
     }
     void pop(){
         l1.delete_from_front();
     }
     void top(){
-        l1.get_front_element();
+        cout<<l1.get_front_element()<<endl;
+    }
+    void display(){
+        l1.display();
     }
     Stack(){}
 };

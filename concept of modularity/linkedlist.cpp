@@ -1,5 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
+struct node{
+    int data;
+    node *next;
+};
 class Linkedlist{
     private:
     node *head;
@@ -58,12 +62,24 @@ class Linkedlist{
         for(ptr=head; ptr->next != NULL; ptr = ptr->next);
         return ptr->data;
     }
+    void display(){
+        node *ptr = head;
+        cout<<"Stack is: ";
+        if(ptr == NULL){
+            cout<<"Empty stack\n";
+        }
+        else if(ptr->next == NULL){
+            cout<<ptr->data;
+        }
+        else{
+        for(ptr = head; ptr != NULL; ptr = ptr->next){
+            cout<<ptr->data<<" ";
+        }
+    }
+    cout<<endl;
+    }
     Linkedlist(){
         head = NULL;
     }
-    struct node{
-    int data;
-    node *next;
-    };
 };
 
