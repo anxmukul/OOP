@@ -3,11 +3,9 @@
 using namespace std;
 class Stack{
     private:
-    //int y;
     Linkedlist l1;
     public:
     void push(int n){
-        //y = n;
         l1.insert_at_front(n);
     }
     void pop(){

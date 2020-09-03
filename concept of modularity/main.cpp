@@ -1,8 +1,13 @@
 #include "stack.cpp"
+#include "queue.cpp"
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
     Stack s1;
+    Queue s2;
+    cout<<"On which data structure you want to perform\nPress 1 for Stack\tPress 2 for Queue\n";
+    int j;
+    cin>>j;
     cout<<"Choose any number:\n";
     cout<<"1. To push an element\n2. To pop top element\n3. To get top element\n4. To display the stack\n";
     cout<<"Press 0 to exit the program\n";
