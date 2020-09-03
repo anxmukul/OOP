@@ -21,7 +21,7 @@ class Linkedlist{
             cur->data = x;
             ptr->next = cur;
             cur->next = NULL;
-            ptr = cur;   
+            ptr = cur;    
         }
     }
     void insert_at_front(int x){
@@ -82,4 +82,3 @@ class Linkedlist{
         head = NULL;
     }
 };
-
