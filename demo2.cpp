@@ -23,6 +23,7 @@ public:
         cout << "Roll no. = "<< roll << "\n";
         cout << "Percentage = "<< percentage << "\n";
         cout << "Sports = "<< sport << "\n";
+        cout<<"\n";
     }
     void change_name(string rename)
     {
@@ -32,9 +33,12 @@ public:
     {
         roll = r;
     }
-    void no_of_students()
+    /*void no_of_students()
     {
         cout<<"Total number of students are\t"<<total<<endl;
+    }*/
+    static void no_of_students(){       //Static member function to get total no. of students
+        cout<<"Total number of students are\t"<<total<<endl;    //It can't access non static data member;
     }
 };
 int student::total;
@@ -48,6 +52,9 @@ int main(){
     student s3;
     s3.set_details("Manraj", 78.89, "Football");
     s3.get_details();
-    s3.no_of_students();
+    s3.change_name("Manraj Singh");
+    s3.get_details();
+    //s3.no_of_students();
+    student::no_of_students();      //Calling static data function
     return 0;
 }
