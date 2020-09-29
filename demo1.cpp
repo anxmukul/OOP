@@ -2,9 +2,11 @@
 using namespace std;
 class student
 {
-public:
+private:
     string name;
+protected:
     int roll;
+public:
     double percentage;
     string sport;
 
@@ -33,5 +35,7 @@ int main()
     s1.sport = "Football";  //As the data members are public we can access outside class scope
     cout<<"After changing percentage and sports of student s1\n";
     s1.get_details();
+    //s1.name = "Alexa Puchoa"     //We canot access Private data member outside the class scope 
+    //s1.roll = 14                  //Also protected data membet canot be accessed outside class scope.
     return 0;
 }
