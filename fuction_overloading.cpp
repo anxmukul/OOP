@@ -30,7 +30,10 @@ class Add{
     int get_result(double x, int y){
         cout<<"Function with different Parameter type called\n";
         return x+y;
-    }    
+    }
+    /*int get_result(double m, double n){   //  Overriden function
+        return m+n;
+    } */   
 };
 int main(){
     Add a;
