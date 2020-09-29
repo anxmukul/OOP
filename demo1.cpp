@@ -29,5 +29,9 @@ int main()
     student s1;
     s1.set_details("Alex", 12, 67.89, "Cricket");
     s1.get_details();
+    s1.percentage = 46.23;
+    s1.sport = "Football";  //As the data members are public we can access outside class scope
+    cout<<"After changing percentage and sports of student s1\n";
+    s1.get_details();
     return 0;
 }
