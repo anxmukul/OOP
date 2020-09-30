@@ -54,7 +54,6 @@ int main(){
     s3.get_details();
     s3.change_name("Manraj Singh");
     s3.get_details();
-    //s3.no_of_students();
     student::no_of_students();      //Calling static data function
     return 0;
 }
