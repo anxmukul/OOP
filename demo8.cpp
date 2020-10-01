@@ -23,11 +23,12 @@ public:
     }
     student(student &o)
     {
-        total += 1;
+       // total += 1;
         cout << "Copy constructor called\n";
         class_teacher = o.class_teacher;
         name = o.name;
-        roll = total;       // Here we are not copying roll from any class;
+        //roll = total;       // Here we are not copying roll from any class;
+        roll = o.roll;
         percentage = o.percentage;
         class_teacher = o.class_teacher;
         sport = o.sport;
@@ -48,7 +49,6 @@ int main()
     student s1("Alex", 67.89, "Cricket", "Prakash Sahu");
     s1.get_details();
     student s2("Manraj", 76.98, "Footbaal");
-    //s2 = s1;
     s2.get_details();
     student s3 = s1;
     s3.get_details();
