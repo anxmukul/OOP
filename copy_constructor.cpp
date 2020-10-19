@@ -27,6 +27,9 @@ public:
         percentage = s.percentage;
         sport = s.sport;
     }
+    ~student(){
+        cout<<"Destructor is called\n";
+    }
     void get_details()
     {
         cout << "Name = " << name << "\n";
