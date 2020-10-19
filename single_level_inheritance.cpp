@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 class Account{
-private:
     string name;
     int id;
 public:
@@ -20,7 +19,7 @@ class Student:public Account{
         string address;
 };
 int main(){
-    Student s1;
+    Student s1; 
     s1.set_details("Abhimanyu", 053);       //Member functions are inherited
     s1.fee = 2300;
     s1.address = "Allahabad UP";
@@ -30,3 +29,27 @@ int main(){
     return 0;
 }
 //Private member are not inheritable we can access private data by member function.
+// class A{
+//     public:
+//     int a, b;
+//     public:
+//         void swap(int x = 7, int y = 8){
+//             a = x;
+//             b = y;
+//             int c = a*b;
+//             a = c/a;
+//             b = c/b;
+//         }
+// };
+// class B:public A{
+//     public:
+//     void display(){
+//         cout<<"After swapping"<<"a "<<a<<endl;
+//         cout<<"b: "<<b<<endl;
+//     }
+// };
+// int main(){
+//     B o;
+//     o.display();
+//     return 0;
+// }
