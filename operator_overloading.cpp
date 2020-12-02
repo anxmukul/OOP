@@ -82,7 +82,7 @@ int main()
     cout << "Enter hour, min, sec\n";
     cin >> x >> y >> z;
     Time t2(x, y, z);
-    Time t = t1 + t2;
+    Time t = 4 + t2;
     Time s = t1 - t2;
     t.print();
     s.print();
